@@ -6,7 +6,7 @@ class Square:
     Attributes:
         __size (int): The size of the square.
 
-    Possible error raised:
+     Raises:
         TypeError: If size is not an integer.
         ValueError: If size is less than 0.
     """
@@ -14,10 +14,10 @@ class Square:
     def __init__(self, size=0):
         """Initialize a new Square object with an optional size.
 
-        Arguments:
+         Args:
             size (int): The size of the new square. Defaults to 0.
 
-        Possible error raised:
+         Raises:
             TypeError: If size is not an integer.
             ValueError: If size is less than 0.
         """
@@ -32,10 +32,10 @@ class Square:
     def size(self, value):
         """Set the value of the private instance attribute __size.
 
-        Arguments:
+         Args:
             value (int): The new value for __size.
 
-        Possible error raised:
+         Raises:
             TypeError: If value is not an integer.
             ValueError: If value is less than 0.
         """

@@ -7,7 +7,7 @@ class Square:
         __size (int): The size of the square.
         __position (tuple): The position of the square.
 
-    Possible error raised:
+     Raises:
         TypeError: If size is not an integer or if position is not a tuple of 2 positive integers.
         ValueError: If size is less than 0.
     """
@@ -15,11 +15,11 @@ class Square:
     def __init__(self, size=0, position=(0, 0)):
         """Initialize a new Square object with optional size and position.
 
-        Arguments:
+         Args:
             size (int): The size of the new square. Defaults to 0.
             position (tuple): The position of the new square. Defaults to (0, 0).
 
-        Possible error raised:
+         Raises:
             TypeError: If size is not an integer or if position is not a tuple of 2 positive integers.
             ValueError: If size is less than 0.
         """
@@ -35,10 +35,10 @@ class Square:
     def size(self, value):
         """Set the value of the private instance attribute __size.
 
-        Arguments:
+         Args:
             value (int): The new value for __size.
 
-        Possible error raised:
+         Raises:
             TypeError: If value is not an integer.
             ValueError: If value is less than 0.
         """
@@ -58,10 +58,10 @@ class Square:
    def position(self,value):
        """Set the value of the private instance attribute __position.
 
-       Arguments:
+        Args:
            value (tuple): The new values for __position.
 
-       Possible error raised:
+        Raises:
            TypeError: If value is not a tuple or does not contain two positive integers. 
        """
        if type(value) != tuple or len(value) !=2 or type(value[0]) != int or type(value[1]) != int or \
