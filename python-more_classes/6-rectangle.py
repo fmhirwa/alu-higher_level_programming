@@ -14,6 +14,7 @@ class Rectangle:
 
     number_of_instances = 0
 
+
     def __init__(self, width=0, height=0):
         """
         Method documentation
@@ -29,6 +30,8 @@ class Rectangle:
         Rectangle.number_of_instances += 1
 
     @property
+
+
     def width(self):
         """
         Method documentation
@@ -41,6 +44,8 @@ class Rectangle:
         return self.__width
 
     @width.setter
+
+
     def width(self, value):
         """
         Method documentation
@@ -62,6 +67,8 @@ class Rectangle:
             self.__width = value
 
     @property
+
+
     def height(self):
         """
         Method documentation
@@ -74,6 +81,8 @@ class Rectangle:
         return self.__height
 
     @height.setter
+
+
     def height(self, value):
         """
         Method documentation
@@ -94,6 +103,7 @@ class Rectangle:
         else:
             self.__height = value
 
+
     def area(self):
         """
         Method documentation
@@ -104,6 +114,7 @@ class Rectangle:
             The area of the rectangle.
         """
         return self.__width * self.__height
+
 
     def perimeter(self):
         """
@@ -118,6 +129,7 @@ class Rectangle:
             return 0
         return (self.__width + self.__height) * 2
 
+
     def __str__(self):
         """
         Method documentation
@@ -131,6 +143,7 @@ class Rectangle:
             return ""
         return "\n".join("#" * self.__width for i in range(self.__height))
 
+
     def __repr__(self):
         """
         Method documentation
@@ -141,6 +154,7 @@ class Rectangle:
             A string that represents the Rectangle object.
         """
         return "Rectangle({}, {})".format(self.__width, self.__height)
+
 
     def __del__(self):
         """

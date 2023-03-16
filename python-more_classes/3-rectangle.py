@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+
+
 """
 This module contains a Rectangle class
 """
@@ -17,6 +19,8 @@ class Rectangle:
         self.height = height
 
     @property
+
+
     def width(self):
         """
         Getter method for width
@@ -24,6 +28,8 @@ class Rectangle:
         return self.__width
 
     @width.setter
+
+
     def width(self, value):
         """
         Setter method for width
@@ -36,6 +42,8 @@ class Rectangle:
             self.__width = value
 
     @property
+
+
     def height(self):
         """
         Getter method for height
@@ -43,6 +51,8 @@ class Rectangle:
         return self.__height
 
     @height.setter
+
+
     def height(self, value):
         """
         Setter method for height
@@ -54,11 +64,13 @@ class Rectangle:
         else:
             self.__height = value
 
+
     def area(self):
         """
         Calculates the area of the rectangle
         """
         return self.width * self.height
+
 
     def perimeter(self):
         """
@@ -68,6 +80,7 @@ class Rectangle:
             return 0
         else:
             return 2 * (self.width + self.height)
+
 
     def __str__(self):
         """
