@@ -1,5 +1,10 @@
 #!/usr/bin/python3
 
+"""
+test documentation
+
+"""
+
 class Square:
     """This class defines a square with private instance attributes size and position.
 
