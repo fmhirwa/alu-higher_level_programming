@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 
 
-"""Define class Square"""
+"""Define class Square in 6-square.py"""
 
 
 class Square:
+
     """Class with size attribute"""
     def __init__(self, size=0, position=(0, 0)):
         """Initialise Square"""
@@ -20,6 +21,7 @@ class Square:
 
     @property
     def size(self):
+""" documented """
         return (self.__size)
 
     @size.setter
@@ -41,6 +43,7 @@ class Square:
 
     @property
     def position(self):
+""" documented """
         return (self.__position)
 
     @position.setter
@@ -56,6 +59,7 @@ class Square:
         self.__position = value
 
     def my_print(self):
+""" documented """
         if self.__size == 0:
             print()
             return
