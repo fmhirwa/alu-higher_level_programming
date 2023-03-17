@@ -5,7 +5,7 @@
 
 
 class Square:
-    # Constructor to initialize the class with a size attribute and a position
+    """ Constructor to initialize the class with a size attribute and a position"""
     def init(self, size=0, position=(0, 0)):
         # Check if the size argument is an integer and greater than or equal to zero
         if type(size) is not int:
