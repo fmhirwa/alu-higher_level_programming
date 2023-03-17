@@ -1,90 +1,86 @@
 #!/usr/bin/python3
 
-"""
-test documentation
 
-"""
+"""Define the class Square but different"""
+
 
 class Square:
-    """This class defines a square with private instance attributes size and position.
+    # Constructor to initialize the class with a size attribute and a position
+    def init(self, size=0, position=(0, 0)):
+        # Check if the size argument is an integer and greater than or equal to zero
+        if type(size) is not int:
+            raise TypeError("size must be an integer")
+        elif size < 0:
+            raise ValueError("size must be >= 0")
+        # Assign the size argument to the private attribute __size
+        self.__size = size
+    # Method to calculate and return the area of the square
+    def area(self):
+        """Returns the current square area"""
+        return (self.__size ** 2)
 
-    Attributes:
-        __size (int): The size of the square.
-        __position (tuple): The position of the square.
-
-     Raises:
-        TypeError: If size is not an integer or if position is not a tuple of 2 positive integers.
-        ValueError: If size is less than 0.
-    """
-
-    def __init__(self, size=0, position=(0, 0)):
-        """Initialize a new Square object with optional size and position.
-
-         Args:
-            size (int): The size of the new square. Defaults to 0.
-            position (tuple): The position of the new square. Defaults to (0, 0).
-
-         Raises:
-            TypeError: If size is not an integer or if position is not a tuple of 2 positive integers.
-            ValueError: If size is less than 0.
-        """
-        self.size = size
-        self.position = position
-
+    # Getter method to return the value of the private attribute __size
     @property
     def size(self):
-        """Return the current value of the private instance attribute __size."""
-        return self.__size
+        return (self.__size)
 
+    # Setter method to set the value of the private attribute __size
     @size.setter
     def size(self, value):
-        """Set the value of the private instance attribute __size.
-
-         Args:
-            value (int): The new value for __size.
-
-         Raises:
-            TypeError: If value is not an integer.
-            ValueError: If value is less than 0.
-        """
-        if type(value) != int:
+        """set the attribute size"""
+        # Check if the size argument is an integer and greater than or equal to zero
+        if type(value) is not int:
             raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
-        else:
-            self.__size = value
+        # Set the value of the private attribute __size to the size argument
+        self.__size = value
 
+    # Method to print the square using the "#" character
+    def my_print(self):
+        """Prints the square using the # character"""
+        # Check if the size of the square is zero
+        if self.__size == 0:
+            # If it is, print a newline character and return
+            print()
+            return
+        # Loop through the size of the square and print "#" multiplied by the size on each line
+        for i in range(self.__size):
+            print("#" * self.__size)
+
+    # Getter method to return the value of the private attribute __position
     @property
     def position(self):
-       """Return the current value of the private instance attribute __position."""
-       return self.__position
+        return (self.__position)
 
-   @position.setter
-   def position(self,value):
-       """Set the value of the private instance attribute __position.
+    # Setter method to set the value of the private attribute __position
+    @position.setter
+    def position(self, value):
+        """Set the attribute position"""
+        # Check if the value argument is a tuple of length 2
+        if type(value) is not tuple or len(value) != 2:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        # Check if both elements in the tuple are integers
+        if type(value[0]) is not int or type(value[1]) is not int:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        # Check if both elements in the tuple are greater than or equal to zero
+        if value[0] < 0 or value[1] < 0:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        # Set the value of the private attribute __position to the value argument
+        self.__position = value
 
-        Args:
-           value (tuple): The new values for __position.
+    # Method to print the square with the position set by the __position attribute
+    def my_print(self):
+        # Check if the size of the square is zero
+        if self.__size == 0:
+            # If it is, print a newline character and return
+            print()
+            return
 
-        Raises:
-           TypeError: If value is not a tuple or does not contain two positive integers. 
-       """
-       if type(value) != tuple or len(value) !=2 or type(value[0]) != int or type(value[1]) != int or \
-               value[0] < 0 or value[1] < 0 :
-           raise TypeError("position must be a tuple of 2 positive integers")
-       else :
-           self.__position =value
+        # Print a newline character multiplied by the second element of the __position attribute
+        print("\n" * self.__position[1], end="")
 
-   def area(self):
-       """Return the current square area."""
-       return self.__size **2
-
-   def my_print(self):
-      """Prints in stdout the square with character #"""
-      if self.__size == 0 :
-          print()
-      else :
-          print("\n" *self.position[1], end="")
-          for i in range(self.size):
-              print(" " *self.position[0], end="")
-              print("#" *self.size)
+        # Loop through the size of the square
+        for i in range(self.__size):
+            # Print spaces multiplied by the first element of the __position attribute
+            print

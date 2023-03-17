@@ -1,65 +1,51 @@
 #!/usr/bin/python3
 
-"""
-test documentation
-
-"""
+"""Define the Square class"""
 
 class Square:
-    """This class defines a square with a private instance attribute size.
-
-    Attributes:
-        __size (int): The size of the square.
-
-     Raises:
-        TypeError: If size is not an integer.
-        ValueError: If size is less than 0.
-    """
-
+    """Class with a size attribute"""
+    # Constructor that initializes the instance"s size attribute
     def __init__(self, size=0):
-        """Initialize a new Square object with an optional size.
+        """Initialise Square"""
+        # Validate that the size parameter is an integer
+        if type(size) is not int:
+            raise TypeError("size must be an integer")
+        # Validate that the size parameter is not negative
+        elif size < 0:
+            raise ValueError("size must be >= 0")
+        # If the size parameter passes both validation checks, set it as the instance"s size attribute
+        self.__size = size
 
-         Args:
-            size (int): The size of the new square. Defaults to 0.
+    # Instance method that calculates and returns the area of the square
+    def area(self):
+        """Returns the current square area"""
+        return (self.__size ** 2)
 
-         Raises:
-            TypeError: If size is not an integer.
-            ValueError: If size is less than 0.
-        """
-        self.size = size
-
+    # Getter method for the size attribute
     @property
     def size(self):
-        """Return the current value of the private instance attribute __size."""
-        return self.__size
+        return (self.__size)
 
+    # Setter method for the size attribute
     @size.setter
     def size(self, value):
-        """Set the value of the private instance attribute __size.
-
-         Args:
-            value (int): The new value for __size.
-
-         Raises:
-            TypeError: If value is not an integer.
-            ValueError: If value is less than 0.
-        """
-        if type(value) != int:
+        """set the attribute size"""
+        # Validate that the value parameter is an integer
+        if type(value) is not int:
             raise TypeError("size must be an integer")
+        # Validate that the value parameter is not negative
         elif value < 0:
             raise ValueError("size must be >= 0")
-        else:
-            self.__size = value
+        # If the value parameter passes both validation checks, set it as the instance"s size attribute
+        self.__size = value
 
-    def area(self):
-        """Return the current square area."""
-        return self.__size ** 2
-
+    # Instance method that prints a square of a given size using the "#" character
     def my_print(self):
-        """Prints in stdout the square with the character #."""
-        
-       if self.__size == 0:
-           print()
-       else:
-           for i in range(self.__size):
-               print("#" * self.__size)
+        """Prints the square using the # character"""
+        # If the instance"s size attribute is 0, print a blank line and return
+        if self.__size == 0:
+            print()
+            return
+        # Otherwise, print a square with "#" characters using nested loops
+        for i in range(self.__size):
+            print("#" * self.__size)
