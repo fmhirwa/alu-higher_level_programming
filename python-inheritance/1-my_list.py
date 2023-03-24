@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-"""Module, basically"""
+""" This class MyList inherits from list """
+
 
 class MyList(list):
-    """Subclass of list"""
-
+    """ Sorts lists object """
 
     def print_sorted(self):
-        """Print sorted list in ascending order"""
-        print(sorted(self))
+        """ Print sorted list """
+        copy_list = self[:]
+        copy_list.sort()
+        print({}.format(copy_list))
