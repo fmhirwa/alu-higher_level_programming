@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """Module, basically"""
 
+
 Rectangle = __import__("9-rectangle").Rectangle
+
 
 class Square(Rectangle):
     """Inherited from Rectangle, basically"""
