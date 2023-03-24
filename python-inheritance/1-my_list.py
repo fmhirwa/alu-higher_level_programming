@@ -9,4 +9,4 @@ class MyList(list):
         """ Print sorted list """
         copy_list = self[:]
         copy_list.sort()
-        print({}.format(copy_list))
+        print("{}".format(copy_list))
