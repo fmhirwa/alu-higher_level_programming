@@ -5,7 +5,6 @@ import urllib.parse
 import urllib.request
 
 #Documented
-
 if __name__ == "__main__":
 #Documented
     url = sys.argv[1]

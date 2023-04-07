@@ -3,7 +3,6 @@
 import requests
 
 #Documented
-
 if __name__ == "__main__":
 #Documented
     r = requests.get("https://alu-intranet.hbtn.io/status")

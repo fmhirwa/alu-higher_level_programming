@@ -5,7 +5,6 @@ import urllib.error
 import urllib.request
 
 #Documented
-
 if __name__ == "__main__":
 #Documented
     try:
