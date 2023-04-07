@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """Documented"""
+
 import sys
 import urllib.request
 

@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """Documented"""
+
 import urllib.request
 
-Documented
+
 with urllib.request.urlopen("https://alu-intranet.hbtn.io/status") as response:
 """Documented"""
     html = response.read()
