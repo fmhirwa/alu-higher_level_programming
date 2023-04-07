@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+#Documented
 import sys
 import urllib.error
 import urllib.request

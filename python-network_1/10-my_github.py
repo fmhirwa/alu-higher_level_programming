@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+#Documented
 import requests
 import sys
 
