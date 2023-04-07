@@ -1,3 +1,3 @@
 #!/bin/bash
 #Specific GET request
-curl -sH "X-HolbertonSchool-User-Id: 98" "$1"
+curl -sG "$1" -H "X-School-User-Id: 98"
