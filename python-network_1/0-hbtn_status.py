@@ -2,6 +2,8 @@
 #Documented
 import urllib.request
 
+#Documented
+
 with urllib.request.urlopen("https://alu-intranet.hbtn.io/status") as response:
     html = response.read()
     print("Body response:")

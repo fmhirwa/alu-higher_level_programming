@@ -2,6 +2,8 @@
 #Documented
 import requests
 
+#Documented
+
 if __name__ == "__main__":
     r = requests.get("https://alu-intranet.hbtn.io/status")
     print("Body response:")

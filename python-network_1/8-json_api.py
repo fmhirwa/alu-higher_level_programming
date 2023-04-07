@@ -2,6 +2,8 @@
 import requests
 import sys
 
+#Documented
+
 if __name__ == "__main__":
     q = ""
     if len(sys.argv) > 1:
