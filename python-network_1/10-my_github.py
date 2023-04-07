@@ -6,6 +6,7 @@ import sys
 #Documented
 
 if __name__ == "__main__":
+#Documented
     username = sys.argv[1]
     token = sys.argv[2]
     url = "https://api.github.com/user"

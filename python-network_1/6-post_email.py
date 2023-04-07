@@ -5,6 +5,7 @@ import sys
 #Documented
 
 if __name__ == "__main__":
+#Documented
     url = sys.argv[1]
     email = sys.argv[2]
 

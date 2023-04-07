@@ -5,6 +5,7 @@ import sys
 #Documented
 
 if __name__ == "__main__":
+#Documented
     q = ""
     if len(sys.argv) > 1:
         q = sys.argv[1]

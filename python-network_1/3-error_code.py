@@ -7,6 +7,7 @@ import urllib.request
 #Documented
 
 if __name__ == "__main__":
+#Documented
     try:
         with urllib.request.urlopen(sys.argv[1]) as response:
             body = response.read()
