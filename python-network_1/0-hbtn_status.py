@@ -5,7 +5,6 @@ import urllib.request
 
 
 with urllib.request.urlopen("https://alu-intranet.hbtn.io/status") as response:
-"""Documented"""
     html = response.read()
     print("Body response:")
     print("\t- type: {}".format(type(html)))
