@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-#Documented
+"""Documented"""
 import requests
 import sys
 
-#Documented
+"""Documented"""
 if __name__ == "__main__":
-#Documented
+"""Documented"""
     username = sys.argv[1]
     token = sys.argv[2]
     url = "https://api.github.com/user"

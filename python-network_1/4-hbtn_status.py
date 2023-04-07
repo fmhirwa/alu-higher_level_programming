@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-#Documented
+"""Documented"""
 import requests
 
-#Documented
+"""Documented"""
 if __name__ == "__main__":
-#Documented
+"""Documented"""
     r = requests.get("https://alu-intranet.hbtn.io/status")
     print("Body response:")
     print("\t- type: {}".format(type(r.text)))

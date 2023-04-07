@@ -2,8 +2,8 @@
 import requests
 import sys
 
-#Documented
+"""Documented"""
 if __name__ == "__main__":
-#Documented
+"""Documented"""
     r = requests.get(sys.argv[1])
     print(r.headers.get("X-Request-Id"))

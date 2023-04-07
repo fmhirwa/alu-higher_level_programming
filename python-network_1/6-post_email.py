@@ -2,9 +2,9 @@
 import requests
 import sys
 
-#Documented
+"""Documented"""
 if __name__ == "__main__":
-#Documented
+"""Documented"""
     url = sys.argv[1]
     email = sys.argv[2]
 

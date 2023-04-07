@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-#Documented
+"""Documented"""
 import urllib.request
 
-#Documented
+Documented
 with urllib.request.urlopen("https://alu-intranet.hbtn.io/status") as response:
-#Documented
+"""Documented"""
     html = response.read()
     print("Body response:")
     print("\t- type: {}".format(type(html)))
