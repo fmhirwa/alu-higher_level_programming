@@ -1,23 +1,13 @@
 #!/usr/bin/node
+const args = process.argv.slice(2);
 
-const { argv } = process;
+if (args.length === 0 || args.length === 1) {
+    console.log(0);
+} else {
+    const integers = args.map(arg => parseInt(arg));
+    const maxNumber = Math.max(...integers);
+    const filteredIntegers = integers.filter(num => num !== maxNumber);
+    const secondMaxNumber = Math.max(...filteredIntegers);
 
-const arrNum = argv.slice(2);
-
-if (arrNum.length === 1) console.log(0);
-else {
-  for (let i = 0; i < arrNum.length; i++) {
-    arrNum[i] = Number(arrNum[i]);
-  }
-  // Checks for largest + add tp array
-  const biggest = Math.max(...arrNum);
-  let secBig = 0;
-
-  for (let i = 0; i < arrNum.length; i++) {
-    const num = Number(arrNum[i]);
-
-    if (num !== biggest && num > secBig) secBig = num;
-  }
-
-  console.log(secBig);
+    console.log(secondMaxNumber);
 };
