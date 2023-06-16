@@ -10,4 +10,4 @@ if (args.length === 0 || args.length === 1) {
     const secondMaxNumber = Math.max(...filteredIntegers);
 
     console.log(secondMaxNumber);
-};
+}

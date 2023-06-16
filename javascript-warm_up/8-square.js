@@ -10,4 +10,4 @@ if (isNaN(num)) {
         }
         console.log(n);
     }
-};
+}

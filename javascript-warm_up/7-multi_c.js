@@ -6,4 +6,4 @@ if (num) {
     }
 } else {
     console.log('Missing number of occurrences');
-};
+}
